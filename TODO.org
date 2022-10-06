@@ -1,0 +1,29 @@
+* TODOs
+
+** TODO Add recipe to [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html][install themes]]
+** TODO Add installed packages in a extra file
+  - [ ] This should be the same for every supporting OS, i.e. intended structure is
+  #+BEGIN_SRC bash
+  -> OS
+  |
+  ----> .emacs
+  ----> package-list-file
+  #+END_SRC
+** TODO Check when is it suitable to enable autocomplete-mode
+   - https://github.com/auto-complete/auto-complete
+
+* Issues
+
+** TODO Theme `tsdh` not found in Ubuntu emacs setup
+  #+BEGIN_SRC emacs-lisp
+  ;; themes path
+  (add-to-list 'custom-theme-load-path "~/.emacs.d/")
+  (load-theme 'tsdh t)
+  (load-theme 'tango-dark t)
+  #+END_SRC
+
+* Wishlist
+
+** Enable transparent background everywhere!
+   + https://github.com/syl20bnr/spacemacs/issues/7262
+   + https://www.emacswiki.org/emacs/TransparentEmacs
